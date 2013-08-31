@@ -1,3 +1,6 @@
 = SimpleFormGumby
 
-This project rocks and uses MIT-LICENSE.
+This project configures simpel_form te emit Gumby-styled HTML.
+
+simple_form is available at http://github.com/plataformatec/simple_form
+Gumby Framework is available at http://www.gumbyframework.com/

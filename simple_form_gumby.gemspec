@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = SimpleFormGumby::VERSION
   s.authors     = ['Alex Spencer']
   s.email       = ["alexspencer@thebauhub.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/TheBauhub/simple_form_gumby"
   s.summary     = "Causes simple_form to emit Gumby styled HTML"
   s.description = "Configures simple_form (http://github.com/plataformatec/simple_form) to emit Gumby (http://www.gumbyframework.com/) styled HTML."
 
