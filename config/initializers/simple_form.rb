@@ -45,7 +45,7 @@ SimpleForm.setup do |config|
     b.use :error, :wrap_with => {:tag => :span, :class => :error}
   end
 
-  config.wrappers :prepend, :tag => 'div', :class => "field prepend", :error_class => 'danger' do |b|
+  config.wrappers :prepend, :tag => 'div', :class => "prepend field", :error_class => 'danger' do |b|
     b.use :html5
     b.use :placeholder
     b.use :label
@@ -54,17 +54,13 @@ SimpleForm.setup do |config|
     b.use :error, :wrap_with => {:tag => 'span', :class => 'help-inline'}
   end
 
-  config.wrappers :append, :tag => 'div', :class => "control-group field", :error_class => 'error' do |b|
+  config.wrappers :append, :tag => 'div', :class => "append field", :error_class => 'error' do |b|
     b.use :html5
     b.use :placeholder
     b.use :label
-    b.wrapper :tag => 'div', :class => 'controls' do |input|
-      input.wrapper :tag => 'div', :class => 'field append' do |append|
-        append.use :input, :class => [:wide]
-      end
-      input.use :hint, :wrap_with => {:tag => 'span', :class => 'help-block'}
-      input.use :error, :wrap_with => {:tag => 'span', :class => 'help-inline'}
-    end
+    b.use :input
+    b.use :hint, :wrap_with => {:tag => 'span', :class => 'help-block'}
+    b.use :error, :wrap_with => {:tag => 'span', :class => 'help-inline'}
   end
 
   config.wrappers :gumby, :tag => 'div', :class => "field", :error_class => 'danger' do |b|
@@ -80,16 +76,13 @@ SimpleForm.setup do |config|
     b.use :label_input, :class => 'checkbox-inline'
   end
 
-  # Wrappers for forms and inputs using the Twitter Bootstrap toolkit.
-  # Check the Bootstrap docs (http://twitter.github.com/bootstrap)
-  # to learn about the different styles for forms and inputs,
-  # buttons and other elements.
+
   config.default_wrapper = :gumby
 
   # Define the way to render check boxes / radio buttons with labels.
   # Defaults to :nested for bootstrap config.
-  #   :inline => input + label
-  #   :nested => label > input
+  # :inline => input + label
+  # :nested => label > input
   config.boolean_style = :nested
 
   # Default class for buttons
