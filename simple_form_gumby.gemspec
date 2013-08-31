@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["alexspencer@thebauhub.com"]
   s.homepage    = "TODO"
   s.summary     = "Causes simple_form to emit Gumby styled HTML"
-  s.description = "TODO: Description of SimpleFormGumby."
+  s.description = "Configures simple_form (http://github.com/plataformatec/simple_form) to emit Gumby (http://www.gumbyframework.com/) styled HTML."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
